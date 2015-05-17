@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />		
+		<title>OculuScooter</title>
+		
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<link href='http://fonts.googleapis.com/css?family=Nixie+One|Droid+Serif:400,700|PT+Sans:700|Varela+Round' rel='stylesheet' type='text/css'>
+		
+		<!-- CSS links -->
+		<link rel="stylesheet" type="text/css" href="css/defaults.css" />
+		<link rel="stylesheet/less" type="text/css" href="css/main.less" />
+		<script src="js/less.js" type="text/javascript"></script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-62985702-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+	
+	</head>
+	
+	<body>
+
+	<div class="menu-bar">
+		<header>
+			<div>
+				<a href="/">OculuScooter</a>
+			</div>
+		</header>
+
+		<nav>
+			<ul>			
+				<li><a href="#demo">Demo</a></li>
+				<li><a href="#what-we-built">What we built</a></li>
+				<li><a href="#why-we-built-it">Why we built</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="https://github.com/berwin7996/OculuScooterCS498SL">Code</a></li>
+			</ul>			
+		</nav>	
+	</div>
+	
+	<div class="contents">
+		<section class="item" id="demo">
+			<h1>OculuScooter: The Scooter Simulator in VR</h1>
+			<figure>
+				<iframe src="https://player.vimeo.com/video/128041321" width="100%" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+			</figure>
+		</section>
+
+		<section class="item" id="what-we-built">
+			<h1>What We Built</h1>
+			<div class="row">
+				<figure>
+					<img src="images/oculuscooter-setup.jpg">
+				</figure>
+				<div class="item-desc">
+					<p>
+						OculuScooter is a virtual scooter simulator which uses a physical scooter handle and user's own foot as inputs. 
+						We built our own scooter using PVC pipes. We used a rotation sensor to detect the precise angle of the scooter handle. For roller skate, we attached a LED and a photo diode to detect the rotations per second(RPM) of the roller skate wheel and converted it to the user's kicking motion in the virtual scooter.
+						We used Oculus Rift DK2 and Unity 4 as our development platform. For hardware parts, Arduino and Spark Core were used for integrating the rotation sensor inputs and wireless roller skate inputs, respectively.
+						The <a href="http://challengepost.com/software/oculuscooter">older version</a> of OculuScooter was initially made in HackIllinois 2015. The new version features significantly improved handle's rotation detection, improved roller skate RPM measurement algorithm, ability to move in backward direction, and more beautiful scenery of course.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="item" id="why-we-built-it">
+			<h1>Why We Built It?</h1>
+			<div class="item-desc">
+				<p>
+					Our project is inspired by <a href="http://somniacs.co/">Birdly</a>, a bird simulation where a user can fly in the virtual space by intuitively controlling the flaps. 
+					We were especially interested in pursuing a solution to find a good way to navigate in VR, because many existing solutions cause <a href="http://en.wikipedia.org/wiki/Virtual_reality_sickness">VR sicknesses</a> due to vection, or rather disorienting in case of teleport based systems.
+					However, when we were introduced to the Birdly simulator, we noted that many people <a href="http://www.tested.com/art/makers/463385-hands-birdly-virtual-reality-flight-simulator/">reported little or no sickness</a> after using it.We believed that the key to reducing the VR sickness is to generate the physically immersive experiences so that user's focus deviates from vestibular mismatches caused by the simulator.
+					Majority of our users told us that they didn't feel sick or nauseous, which is a great result considering the degree of linear and angular accelerations is high and frequent in our simulator.
+				</p>
+			</div>
+		</section>
+
+		<section class="item" id="team">
+			<h1>Team</h1>
+			<div class="row">
+				<div class="author">
+					<figure>
+						<img src="images/yosub-shin.jpg">
+					</figure>
+					<p>Yosub Shin is a Computer Science student in University of Illinois at Urbana-Champaign.</p>
+				</div>
+				<div class="author">
+					<figure>
+						<img src="images/berwin-xie.jpg">
+					</figure>
+					<p>Berwin Xie is a Computer Science student in University of Illinois at Urbana-Champaign.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		
+		<footer>
+			<p>Copyright © 2015 Berwin Xie &amp; Yosub Shin</p>
+		</footer>
+
+	</div><!--.main-container-->
+	</body>
+
+</html>
