@@ -61,9 +61,10 @@
 				<div class="item-desc">
 					<p>
 						OculuScooter is a virtual scooter simulator which uses a physical scooter handle and user's own foot as inputs. 
-						We built our own scooter using PVC pipes. We used a rotation sensor to detect the precise angle of the scooter handle. For roller skate, we attached a LED and a photo diode to detect the rotations per second(RPM) of the roller skate wheel and converted it to the user's kicking motion in the virtual scooter.
-						We used Oculus Rift DK2 and Unity 4 as our development platform. For hardware parts, Arduino and Spark Core were used for integrating the rotation sensor inputs and wireless roller skate inputs, respectively.
-						The <a href="http://challengepost.com/software/oculuscooter">older version</a> of OculuScooter was initially made in HackIllinois 2015. The new version features significantly improved handle's rotation detection, improved roller skate RPM measurement algorithm, ability to move in backward direction, and more beautiful scenery of course.
+						We built our own scooter using PVC pipes. We used a rotation sensor to detect the precise angle of the scooter handle. For roller skate, we attached a LED and a photo diode, and put a reflective marker on a wheel to detect the rotations per second(RPM) of the roller skate wheel and converted it to the user's kicking motion in the virtual scooter.
+						We used <a href="https://www.oculus.com/">Oculus Rift DK2</a> and <a href="http://unity3d.com/">Unity 4</a> as our development platform. For hardware parts, <a href="http://www.arduino.cc/">Arduino</a> and <a href="http://www.spark.io">Spark Core</a> were used for integrating the rotation sensor inputs and wireless roller skate inputs, respectively.
+						The <a href="http://challengepost.com/software/oculuscooter">older version of OculuScooter</a> was initially made in <a href="http://hackillinois.org">HackIllinois 2015</a>. The new version features significantly improved handle's rotation detection, improved roller skate RPM measurement algorithm, ability to move in backward direction, and more beautiful scenery of course.
+						The cost for building our system was somewhere under 150 dollars, where most of it were spent at roller skate($50), micro controllers($25 * 2), and PVC pipes($20).
 					</p>
 				</div>
 			</div>
@@ -73,10 +74,11 @@
 			<h1>Why We Built It?</h1>
 			<div class="item-desc">
 				<p>
-					Our project is inspired by <a href="http://somniacs.co/">Birdly</a>, a bird simulation where a user can fly in the virtual space by intuitively controlling the flaps. 
-					We were especially interested in pursuing a solution to find a good way to navigate in VR, because many existing solutions cause <a href="http://en.wikipedia.org/wiki/Virtual_reality_sickness">VR sicknesses</a> due to vection, or rather disorienting in case of teleport based systems.
-					However, when we were introduced to the Birdly simulator, we noted that many people <a href="http://www.tested.com/art/makers/463385-hands-birdly-virtual-reality-flight-simulator/">reported little or no sickness</a> after using it.We believed that the key to reducing the VR sickness is to generate the physically immersive experiences so that user's focus deviates from vestibular mismatches caused by the simulator.
-					Majority of our users told us that they didn't feel sick or nauseous, which is a great result considering the degree of linear and angular accelerations is high and frequent in our simulator.
+				  	Our project is inspired by <a href="http://somniacs.co/">Birdly</a>, a VR bird simulatior where a user can fly in the virtual space by intuitively flapping the wings.
+                  	We were interested in pursuing a solution to find a good way to navigate in VR, because many existing solutions cause <a href="http://en.wikipedia.org/wiki/Virtual_reality_sickness">VR sicknesses</a> due to <a href="http://en.wikipedia.org/wiki/Illusions_of_self-motion#Vection">vection</a>, or rather disorienting in case of teleport based systems.
+					However, when we were introduced to the Birdly simulator, we noticed that <a href="http://www.tested.com/art/makers/463385-hands-birdly-virtual-reality-flight-simulator/">many people who tried it reported little or no sickness</a> while or after using it. 
+					Therefore, we believed that the key to reducing the VR sickness is to generate the physically immersive experiences&mdash;in our case, it's controlling of the handle and the foot movement&mdash;so that the user's focus is deviated from vestibular mismatches caused by the simulator.
+					Majority of our users told us that they didn't feel sick or nauseous, which is a great sign considering the significant amount of linear and angular accelerations caused in our simulator.
 				</p>
 			</div>
 		</section>
@@ -88,8 +90,8 @@
 					<figure>
 						<img src="images/yosub-shin.jpg">
 					</figure>
-					<p>Yosub Shin is a Computer Science student in University of Illinois at Urbana-Champaign. Yosub is interested in Graphic Design and Distributed Systems.</p>
-					<p>Visit Yosub's website at <a href="http://www.yosubshin.com/">yosubshin.com</a>.</p>
+					<p>Yosub Shin is a Computer Science student in University of Illinois at Urbana-Champaign. Yosub loves Software Engineering, Graphic Design, and Distributed Systems.</p>
+					<p>You can visit Yosub's website at <a href="http://www.yosubshin.com/">yosubshin.com</a>.</p>
 				</div>
 				<div class="author">
 					<figure>
@@ -97,6 +99,13 @@
 					</figure>
 					<p>Berwin Xie is a Computer Science student in University of Illinois at Urbana-Champaign. Berwin is a Chair for ACM SIGMusic at UIUC.</p>
 					<p>Visit Berwin's website at <a href="http://www.berwin.io/">berwin.io</a>.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="item-desc">
+				<p>
+					The older version of OculuScooter was built by <a href="http://www.cs.cmu.edu/directory/se-joon-chung">Se-Joon Chung</a>, <a href="https://www.linkedin.com/in/jiohyoo">Ji Oh Yoo</a>, <a href="https://www.linkedin.com/pub/shin-seungwon/a3/357/a74/en">SeungWon Shin</a>, and <a href="http://www.yosubshin.com">Yosub Shin</a> as part of <a href="http://www.hackillinois.org/">HackIllinois 2015</a>.
+				</p>
 				</div>
 			</div>
 		</section>
